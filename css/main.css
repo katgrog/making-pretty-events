@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* clearfix */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* base styles */
+
+body {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000000;
+	line-height: 2;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* header */
+
+.header--main {
+	margin: 150px 0 0 0;
+}
+
+.header-img {
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 50;
+}
+
+/* navigation */
+
+.navigation--main {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.link--main {
+	margin: 0 40px 0 0;
+	text-decoration: none;
+	color: #000000;
+	border-bottom: 4px solid #ffdb00;
+	transition: all 0.2s;
+}
+
+.link--main:hover {
+	border-bottom: 4px solid #000000;
+}
+
+
+/* hero */
+
+.hero__content {
+	height: 500px;
+	position: relative;
+	background-color: #f4f4f4;
+}
+
+.hero-wrapper {
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 230px;
+	text-align: center;
+}
+
+.hero-text {
+	position: relative;
+	display: inline-block;
+}
+
+.hero-text p {
+	padding: 0;
+	margin: 0;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.hero-illustration {
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-illustration--line {
+	bottom: -35px;
+	left: 0;
+	height: 50px;
+	width: 150px;
+	background-image: url('../img/line.png');
+}
+
+.hero-illustration--arrow {
+	bottom: 40px;
+	left: 180px;
+	height: 70px;
+	width: 50px;
+	background-image: url('../img/arrow.png');
+}
+
+.hero-illustration--spark {
+	bottom: 30px;
+	left: 275px;
+	height: 50px;
+	width: 150px;
+	background-image: url('../img/spark.png');
+}
+
+.hero-illustration--face {
+	position: absolute;
+	width: 170px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+/* event */
+
+.event--primary, .event--secondary {
+	height: 400px;
+}
+
+
+/* event img + tagline */
+
+.event-img, .event-tagline {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.event-img {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+}
+
+.event-img--primary {
+	background-image: url(../img/drawing-eg.jpg);
+}
+
+.event-img--secondary {
+	background-image: url(../img/pencil-eg.jpg);
+}
+
+.event-tagline {
+	text-align: center;
+}
+
+.event-heading {
+	margin: 30px 0 0 0;
+}
+
+.event-text {
+	padding: 50px 80px;
+}
+
+.event-span {
+	border-bottom: 4px solid #ffdb00;
+}
+
+
+/* event overlay + more info */
+
+.event__overlay {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: #ffdb00;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.event-more-info {
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #000000;
+	padding: 10px 20px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+}
+
+.event-more-info:hover {
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+}
+
+
+/* ticket content, container and headings */
+
+.ticket__content {
+	background-color: #f4f4f4;
+	width: 100%;
+	height: 500px;
+}
+
+.ticket-container {
+	width: 850px;
+	margin: 0 auto;
+}
+
+.ticket-heading, .order-heading {
+	padding: 70px 0 0 0;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.order-heading {
+	font-weight: 400;
+	color: #000000;
+	margin: 0 0 50px 0;
+}
+
+
+/* ticket form + summary */
+
+.ticket-form, .ticket-summary {
+	width: 50%;
+	float: left;
+}
+
+
+/* ticket form */
+
+.ticket-event-option, .ticket-quantity-option {
+	margin: 0 10px;
+}
+
+.ticket--event, .ticket--quantity, .ticket-summary {
+	font-size: 18px;
+}
+
+.ticket--event, .ticket--quantity {
+	margin: 50px 0 0 0;
+	color: #6b6a6a;
+}
+
+.ticket-number {
+	color: #000000;
+	font-weight: 700;
+}
+
+.ticket-submit {
+	margin: 50px 0 0 0;
+}
+
+.ticket-submit-button {
+	background-color: #dfdede;
+	width: 200px;
+	font-weight: 700;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px 0;
+}
+
+
+.ticket-submit-button:hover {
+	background-color: #ffdb00;
+}
+
+
+/* footer */
+
+footer {
+	height: 150px;
+	background-color: #ffdb00;
+}
+
+.social-icons {
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+.social-circle {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	margin: 30px 50px;
+}
