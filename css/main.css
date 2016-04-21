@@ -25,14 +25,22 @@ h2 {
 	padding: 0;
 }
 
+.border-emphasis {
+	border-bottom: 4px solid #ffdb00;
+}
+
+.bold-emphasis {
+	font-weight: 700;
+}
+
 
 /* header */
 
-.header--main {
+.header {
 	margin: 150px 0 0 0;
 }
 
-.header-img {
+.header__img {
 	width: 150px;
 	position: absolute;
 	left: 50%;
@@ -42,13 +50,13 @@ h2 {
 
 /* navigation */
 
-.navigation--main {
+.main-nav {
 	position: absolute;
 	top: 20px;
 	right: 20px;
 }
 
-.link--main {
+.main-nav__link {
 	margin: 0 40px 0 0;
 	text-decoration: none;
 	color: #000000;
@@ -56,14 +64,14 @@ h2 {
 	transition: all 0.2s;
 }
 
-.link--main:hover {
+.main-nav__link:hover {
 	border-bottom: 4px solid #000000;
 }
 
 
 /* hero */
 
-.hero__content {
+.hero-content {
 	height: 500px;
 	position: relative;
 	background-color: #f4f4f4;
@@ -79,26 +87,26 @@ h2 {
 	text-align: center;
 }
 
-.hero-text {
+.hero-content__text {
 	position: relative;
 	display: inline-block;
 }
 
-.hero-text p {
+.hero-content__text p {
 	padding: 0;
 	margin: 0;
 	font-size: 40px;
 	line-height: 40px;
 }
 
-.hero-illustration {
+.hero-content__illustration {
 	position: absolute;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.hero-illustration--line {
+.hero-content__illustration--line {
 	bottom: -35px;
 	left: 0;
 	height: 50px;
@@ -106,7 +114,7 @@ h2 {
 	background-image: url('../img/line.png');
 }
 
-.hero-illustration--arrow {
+.hero-content__illustration--arrow {
 	bottom: 40px;
 	left: 180px;
 	height: 70px;
@@ -114,7 +122,7 @@ h2 {
 	background-image: url('../img/arrow.png');
 }
 
-.hero-illustration--spark {
+.hero-content__illustration--spark {
 	bottom: 30px;
 	left: 275px;
 	height: 50px;
@@ -122,7 +130,7 @@ h2 {
 	background-image: url('../img/spark.png');
 }
 
-.hero-illustration--face {
+.hero-content__illustration--face {
 	position: absolute;
 	width: 170px;
 	bottom: 0;
@@ -134,47 +142,43 @@ h2 {
 
 /* event */
 
-.event--primary, .event--secondary {
+.event {
 	height: 400px;
 }
 
 
 /* event img + tagline */
 
-.event-img, .event-tagline {
+.event__img, .event__tagline {
 	width: 50%;
 	height: 100%;
 	float: left;
 }
 
-.event-img {
+.event__img {
 	position: relative;
 	background-position: center;
 	background-size: cover;
 }
 
-.event-img--primary {
+.event__img--primary {
 	background-image: url(../img/drawing-eg.jpg);
 }
 
-.event-img--secondary {
+.event__img--secondary {
 	background-image: url(../img/pencil-eg.jpg);
 }
 
-.event-tagline {
+.event__tagline {
 	text-align: center;
 }
 
-.event-heading {
+.event__heading {
 	margin: 30px 0 0 0;
 }
 
-.event-text {
+.event__text {
 	padding: 50px 80px;
-}
-
-.event-span {
-	border-bottom: 4px solid #ffdb00;
 }
 
 
@@ -189,7 +193,7 @@ h2 {
 	text-align: center;
 }
 
-.event-more-info {
+.event__more-info {
 	font-size: 14px;
 	font-weight: 700;
 	text-decoration: none;
@@ -199,7 +203,7 @@ h2 {
 	border-radius: 5px;
 }
 
-.event-more-info:hover {
+.event__more-info:hover {
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
 }
@@ -207,24 +211,24 @@ h2 {
 
 /* ticket content, container and headings */
 
-.ticket__content {
+.tickets {
 	background-color: #f4f4f4;
 	width: 100%;
 	height: 500px;
 }
 
-.ticket-container {
+.tickets-container {
 	width: 850px;
 	margin: 0 auto;
 }
 
-.ticket-heading, .order-heading {
+.ticket__heading, .order__heading {
 	padding: 70px 0 0 0;
 	font-weight: 700;
 	font-size: 30px;
 }
 
-.order-heading {
+.order__heading {
 	font-weight: 400;
 	color: #000000;
 	margin: 0 0 50px 0;
@@ -233,7 +237,7 @@ h2 {
 
 /* ticket form + summary */
 
-.ticket-form, .ticket-summary {
+.ticket__form, .order-summary {
 	width: 50%;
 	float: left;
 }
@@ -241,29 +245,25 @@ h2 {
 
 /* ticket form */
 
-.ticket-event-option, .ticket-quantity-option {
+.ticket__event-options, .ticket-quantity-option {
 	margin: 0 10px;
 }
 
-.ticket--event, .ticket--quantity, .ticket-summary {
+.ticket__choose-event, .ticket__choose-quantity,
+.order-summary {
 	font-size: 18px;
 }
 
-.ticket--event, .ticket--quantity {
+.ticket__choose-event, .ticket__choose-quantity {
 	margin: 50px 0 0 0;
 	color: #6b6a6a;
 }
 
-.ticket-number {
-	color: #000000;
-	font-weight: 700;
-}
-
-.ticket-submit {
+.order-submit {
 	margin: 50px 0 0 0;
 }
 
-.ticket-submit-button {
+.order-submit__button {
 	background-color: #dfdede;
 	width: 200px;
 	font-weight: 700;
@@ -273,7 +273,7 @@ h2 {
 }
 
 
-.ticket-submit-button:hover {
+.order-submit__button:hover {
 	background-color: #ffdb00;
 }
 
@@ -285,12 +285,12 @@ footer {
 	background-color: #ffdb00;
 }
 
-.social-icons {
+.social {
 	text-align: center;
 	padding: 10px 0 0 0;
 }
 
-.social-circle {
+.social__circle {
 	display: inline-block;
 	width: 60px;
 	height: 60px;
